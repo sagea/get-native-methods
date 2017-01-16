@@ -4,8 +4,8 @@ This code is not clean and it was not designed with production in mind. I built 
 
 # How to use
 ```
-var lookingFor = ['Array', 'Array.prototype', ...]
-window.getNativeMethods().then(nativeMethodList => {
+let lookingFor = ['Array', 'Array.prototype', ...]
+window.getNativeMethods(lookingFor).then(nativeMethods => {
   console.log('Object of native methods', nativeMethods); // { 'Array': [...], 'Array.prototype': [...], ...} 
 })
 ```
